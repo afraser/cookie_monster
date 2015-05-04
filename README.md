@@ -1,4 +1,4 @@
-# cookie_monster
+# Cookie Monster
 Get and set cookies without worrying about types.
 Uses $.cookie.
 
@@ -45,4 +45,3 @@ Uses $.cookie.
     CookieMonster.delete('my_cookie')
     CookieMonster.get('my_cookie')
     > undefined
-    
