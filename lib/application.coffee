@@ -24,7 +24,9 @@ CookieMonster.delete = (key) ->
   $.removeCookie key
 
 CookieMonster.all = ->
-  $.cookie()
+  dict = {}
+  dict[key] = CookieMonster.get(key) for key, _ of $.cookie()
+  dict
 
 # Utility function to clean up any cookies that were previously set with
 # specific paths since they override cookies at the root path.
